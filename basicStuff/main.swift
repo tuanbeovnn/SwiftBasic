@@ -7,5 +7,25 @@
 
 import Foundation
 
-print("Hello, World!")
+var nickName: String? = "Tuan"
+print(nickName)
+
+
+func greetUser(name:String?){
+    guard let userName = name else {
+        print("No name provided")
+        return
+    }
+    print("Hello \(userName)")
+}
+
+greetUser(name:"Tuan")
+
+
+
+let displayName = nickName ?? "Anonymous"
+print("Display Name \(displayName)")
+
+
+
 
